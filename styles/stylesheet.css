@@ -1,0 +1,149 @@
+html, body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+.sidebar {
+  flex: 1;
+  background-image: url("../assets/hd_leaf_photo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body {
+  display: flex;
+}
+
+.sidebar > :first-child {
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+}
+
+.sidebar > :last-child {
+  color: aliceblue;
+  text-align: center;
+}
+
+.sidebar > :last-child a {
+  color: aliceblue;
+}
+
+.sidebar > div > img {
+  width: 5rem;
+  height: 5rem;
+  margin-right: 10px;
+}
+
+.sidebar > div > h1 {
+  font-family: 'norsebold';
+  font-size: 5rem;
+  color: aliceblue;
+  text-align: center;
+}
+
+.container {
+  flex: 2.5;
+  background-color: #F9FAFB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'roboto';
+}
+
+.form-container {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding-left: 40px;
+}
+
+.text-container {
+  padding-left: 40px;
+  margin: 40px 0 40px 0;
+  position: inherit;
+}
+
+.text-container > * {
+  font-family: 'roboto';
+  width: 74%;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.buttons {
+  padding: 30px 0 0 40px;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+}
+
+.input-container > div {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 20px 10px 0;
+}
+
+.input-container > div > input {
+  font-size: 20px;
+  border-radius: 5px;
+  width: 250px;
+  height: 30px;
+  border: solid #E5E7EB 1.5px;
+}
+
+.input-container > div > label {
+  letter-spacing: 1px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  font-family: 'roboto';
+}
+
+input[type="submit"] {
+  text-align: center;
+  color: #E5E7EB;
+  font-weight: bold;
+  font-size: 20px;
+  width: fit-content;
+  padding: 0 50px 0 50px;
+  margin: 0px 0 20px 0;
+  height: 50px;
+  background: #596D48;
+  border-radius: 10px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.input-container > div > input:focus {
+  border-color: rgb(58, 56, 172);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.input-container > div > input:required:valid {
+  border-color: white;
+}
+
+.input-container > div > input:invalid {
+  border-color: red;
+  content: 'Passwords do not match';
+}
+
+.input-container > div > label::before {
+  content: '*';
+}
